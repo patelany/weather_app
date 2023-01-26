@@ -5,9 +5,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather APP</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     </head>
     <body>
+        <header>
+            <h1 class="page-title">Weather App</h1>
+            <div class="search-bar" id="searchBar" novalidate>
+                <input type="text" class="search-input" id="searchInput" placeholder="search for city"/>
+                <button type="submit" class="searchBtn" id="searchBtn"><i class="fa fa-search"></i></button>
+            </div>
+        </header>
+        <main>
+            <div class="search-result" id="searchResult">
+                <h2 id="city"></h2>
+                <img src="" id="image"/>
+                <div class="icon rainy" id="rainCloud">
+                    <div class="cloud" id="rainCloud"></div>
+                    <div class="rain" id="rainCloud"></div>
+                </div>
+                <div class="icon cloudy" id="doubleCloud">
+                    <div class="cloud" id="doubleCloud"></div>
+                    <div class="cloud" id="doubleCloud"></div>
+                </div>
+                <div class="icon sunny" id="sunny">
+                    <div class="sun" id="sunny">
+                        <div class="rays" id="sunny"></div>
+                    </div>
+                </div>
+                <div class="icon flurries" id="snowCloud">
+                    <div class="cloud" id="snowCloud"></div>
+                    <div class="snow" id="snowCloud">
+                        <div class="flake"></div>
+                        <div class="flake"></div>
+                    </div>
+                </div>
+                <div class="icon thunder" id="thunderStorm">
+                    <div class="cloud" id="thunderStorm"></div>
+                    <div class="lightning" id="thunderStorm">
+                        <div class="bolt"></div>
+                        <div class="bolt"></div>
+                    </div>
+                </div>
+                <button id="convertBtn">°C</button>
+                <p id="temperature"></p>
+                <p id="title"></p>
+                <p id="feelsLike"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </main>
         <script src="main.js"></script>
-    </body>
-    
+    </body> 
 </html>
