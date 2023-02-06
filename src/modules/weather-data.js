@@ -1,3 +1,4 @@
+var mykey = config.my_key;
 
 const weather = (() => {
     const icon = document.querySelectorAll('.icon');
@@ -24,7 +25,7 @@ const weather = (() => {
     async function getData(city) {
         try {
             const response = await fetch(
-                `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=ed92aaa2ed1bdb972e3db1b6fe240859`,
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=` + mykey,
                 {
                 mode: 'cors',
                 }
